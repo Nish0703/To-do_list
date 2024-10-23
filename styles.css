@@ -1,0 +1,114 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, red, black); /* Gradient from red to black */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+
+  /* Title styling */
+  header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    color: black; /* Red title */
+    text-shadow: 2px 2px 4px black; /* Black shadow for added depth */
+    margin: 0;
+    padding: 20px 0;
+  }
+  
+  /* Input section styling */
+  .input-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 18px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff4d4d; /* Pinkish red button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e60000; /* Darker red on hover */
+  }
+  
+  /* Task list styling */
+ /* Task list styling */
+ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0 40px; /* Spreads tasks evenly across the page */
+  }
+  
+  li {
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start; /* Align checkbox and task text closer */
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    font-family: 'Cascadia Code', monospace;
+    font-style: italic;/* Increase task text font size */
+  }
+  
+  li input[type="checkbox"] {
+    width: 25px; /* Increase checkbox size */
+    height: 25px; /* Increase checkbox height */
+    margin-right: 10px; /* Reduce space between checkbox and task */
+  }
+  
+  li button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: auto; /* Push delete button to the far right */
+  }
+  
+  li button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    input {
+      width: 60%;
+    }
+    ul {
+      padding: 0 20px;
+    }
+  }
+  
